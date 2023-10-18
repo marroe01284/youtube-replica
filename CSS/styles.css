@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -20,8 +21,10 @@ header {
     padding: 0 0.5rem;
 }
 
-main, .side-menu, .main-content{
-overflow-y: scroll;
+main,
+.side-menu,
+.main-content {
+    overflow-y: scroll;
 }
 
 
@@ -29,19 +32,20 @@ main {
     background-color: aqua;
     flex-grow: 1;
     display: flex;
-    
+
 }
+
 .side-menu {
     width: 240px;
     background-color: blueviolet;
     flex-shrink: 0;
-    
+
 }
 
 .main-content {
     background-color: blue;
     flex-grow: 1;
-   
+
 }
 
 .menu-btn-and-logo {
@@ -54,3 +58,28 @@ main {
     height: 20px;
 }
 
+.settings-btn {
+    background: none;
+    color: white;
+    border: none;
+}
+
+.signin-btn {
+    background-color: black;
+    color: #3ea6ff;
+    border-radius: 20px;
+    padding: .5rem;
+    font-weight: bold;
+    border: 1px solid grey;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-transform: capitalize;
+
+}
+
+.signin-btn:hover {
+    background-color: #263850;
+    border-color: transparent;
+    cursor: pointer;
+}
