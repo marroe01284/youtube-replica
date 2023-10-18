@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    background-color: brown;
+    height: 56px;
+}
+
+main, .side-menu, .main-content{
+overflow-y: scroll;
+}
+
+
+main {
+    background-color: aqua;
+    flex-grow: 1;
+    display: flex;
+    
+}
+.side-menu {
+    width: 240px;
+    background-color: blueviolet;
+    flex-shrink: 0;
+    
+}
+
+.main-content {
+    background-color: blue;
+    flex-grow: 1;
+   
+}
+
